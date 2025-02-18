@@ -139,6 +139,20 @@
         display: block;
       }
     }
+    form.box {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  form.box {
+    padding: 10px;
+  }
+
+  .box input, .box button {
+    font-size: 14px;
+  }
+}
+
   </style>
   </head>
   <body>
@@ -279,7 +293,7 @@
   <div class="social"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>INSTAGRAM</div>
   <div class="social"><a href="#"><i class="fa-brands fa-facebook"></i></a>FACEBOOK</div>        
       </div>
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6 mx-auto">
         <form class="box">
           <div class="mb-3 mt-5 ">
             <h1>Fill the form below</h1>
@@ -298,7 +312,7 @@
             <label for="password">PASSWORD:</label>
           <input type="text" name="psw" class="form-control" placeholder="Enter your Password" required>
         </div>
-        <button style="background-color: deeppink;margin-left: 75%;" class="btn" type="submit">SUBMIT</button>
+        <button style="background-color: deeppink;width: 100% ;margin-left: 75%;" class="btn" type="submit">SUBMIT</button>
         </form>
       </div>
     </div>
