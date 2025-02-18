@@ -156,126 +156,159 @@
   </style>
   </head>
   <body>
-  <div class="container-fluid pt-3 bg-black ">
-  <h1 style="font-weight: 900;color: blue;">PORTFOLIO.</h1>
-  <ul class="nav justify-content-center  nav-pills" role="tablist">
-  <li class="nav-item">
-  <a href="#HOME" class="nav-link active" data-bs-toggle="pill">HOME</a>
-  </li>
-  <li class="nav-item">
-  <a href="#ABOUT" class="nav-link" data-bs-toggle="pill" >ABOUT</a>
-  </li>
-  <li class="nav-item">
-  <a href="#SERVICES" class="nav-link" data-bs-toggle="pill" >SERVICES</a>
-  </li>
-  <li class="nav-item">
-  <a href="#CONTACT"class="nav-link" data-bs-toggle="pill" >CONTACTS</a>
-  </li>
-  </ul>
+    <div class="container-fluid pt-3 bg-black">
+      <h1 style="font-weight: 900; color: blue;">PORTFOLIO.</h1>
+    
+      <!-- Navbar with pills for responsive layout -->
+      <ul class="nav justify-content-center nav-pills flex-column flex-md-row" role="tablist">
+        <li class="nav-item">
+          <a href="#HOME" class="nav-link active" data-bs-toggle="pill">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="#ABOUT" class="nav-link" data-bs-toggle="pill">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a href="#SERVICES" class="nav-link" data-bs-toggle="pill">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a href="#CONTACT" class="nav-link" data-bs-toggle="pill">CONTACT</a>
+        </li>
+      </ul>
+  <br>
   <div class="tab-content">
 
 
       <!-- HOME -->
-  <div id="HOME" class="container tab-pane active">
-  <br>
-  <div class="container mt-5 pt-3 ">
-  <div class="row">
-    <div class="col-12 col-md-6">
-    <h1 style="color: #fff;">Hi,I'm <span class="auto-type" style="color: deeppink; font-weight: 700;"><br></span></h1>
-    <br>
-    <h2 style="color: aqua; font-weight: 700;"><span class="designer"></span></h2>
-  </div>
-  <div class="col-12 col-md-6">
-    <img src="log in profilepicman.png" style="height: 400px;">
-
-  </div>
-  </div>
-  </div>
-  </div>
+      <div id="HOME" class="container tab-pane active">
+        <br>
+        <div class="container mt-5 pt-3">
+          <div class="row">
+            <!-- Text Column -->
+            <div class="col-12 col-md-6">
+              <h1 style="color: #fff;">Hi, I'm <span class="auto-type" style="color: deeppink; font-weight: 700;"></span></h1>
+              <h2 style="color: aqua; font-weight: 700;"><span class="designer"></span></h2>
+            </div>
+      
+            <!-- Image Column -->
+            <div class="col-12 col-md-6">
+              <img src="log in profilepicman.png" class="img-fluid" alt="Profile Picture" style=" max-height: 500px;height: auto; width: 100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      
 
       <!-- ABOUT -->
-  <div id="ABOUT">
-  <br>
-  <div class="container tab-pane mt-5 bg-black " >
-  <div class="row">
-    <div class="col-12 col-md-6">
-  <img src="mbogoo.jpg" style="height: 600px;width: 500px;margin-top: 50px;">
-  </div>
-  <div class="col-12 col-md-6">
-  <h1 style="font-weight: 700; text-align: center; color: aqua;margin-top: 15px;">ABOUT ME</h1>
-  <p class="about">I am a passionate and detail-oriented software developer with expertise in Python, Django, Laravel, MySQL, and JavaScript, skilled in both backend and frontend development. I have hands-on experience building dynamic, efficient, and user-friendly applications, with a strong focus on clean, maintainable code and scalable solutions. I am committed to continuous learning and staying up-to-date with industry trends, and I thrive in collaborative
-     environments, leveraging my problem-solving skills to deliver high-quality software solutions that meet user needs and exceed expectations.</p>
-  <div class="container-fluid pt-3">
-  <ul class="nav justify-content-center nav-pills" role="tablist">
-    <li class="nav-item">
-      <a style="font-weight: 700;" href="#SKILLS" class="nav-link active" data-bs-toggle="pill">SKILLS</a>
-    </li>
-    <li class="nav-item">
-      <a style="font-weight: 700;" href="#EDUCATION" class="nav-link" data-bs-toggle="pill">EDUCATION</a>
-    </li>
-  </ul>
-    <div class="tab-content">
-      <div id="SKILLS" class="container tab-pane active"><br>
-        <div class="container-fluid">
-          <p style="font-weight: 400;color: #fff;">Proficient in HTML, CSS, and JavaScript, I create well-structured and responsive websites. My code is not just functional but also optimized for performance.Approach challenges with a problem-solving mindset, finding innovative solutions and continually improving my skill set.</p>
-  </div>
-  <div class="social"><a href="https://drive.google.com/file/d/1-5Js-tT1hLUrAii_-4AeeUPWii3pdHk1/view?usp=drive_link"><i class="fa-solid fa-file"></i></a>Download Resume</div>  
-  </div>
-  <div id="EDUCATION" class="container tab-pane"><br>
-  <div class="container-fluid">
-  <p style="font-weight: 400;color: #fff;">I hold a Bachelor's of Science in Computer Science degree from KABARAK UNIVERSITY, where I engaged in a comprehensive and enriching academic journey. During my undergraduate studies, I cultivated a strong foundation in Computer Science and gained a deep understanding of key concepts and principles.</p>
-  </div>
-  </div>
-    </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
+      <div id="ABOUT">
+        <br>
+        <div class="container tab-pane mt-5 bg-black">
+          <div class="row">
+            <!-- Image Column -->
+            <div class="col-12 col-md-6">
+              <img src="mbogoo.jpg" class="img-fluid"  style="max-width: 400px; height: auto; width: 100%; margin-top: 50px;" alt="About Me">
+            </div>
+      
+            <!-- Text Column -->
+            <div class="col-12 col-md-6">
+              <h1 style="font-weight: 700; text-align: center; color: aqua; margin-top: 15px;">ABOUT ME</h1>
+              <p class="about" style="font-weight: 400; color: #fff;">
+                I am a passionate and detail-oriented software developer with expertise in Python, Django, Laravel, MySQL, and JavaScript,
+                skilled in both backend and frontend development. I have hands-on experience building dynamic, efficient, and user-friendly
+                applications, with a strong focus on clean, maintainable code and scalable solutions. I am committed to continuous learning
+                and staying up-to-date with industry trends, and I thrive in collaborative environments, leveraging my problem-solving skills
+                to deliver high-quality software solutions that meet user needs and exceed expectations.
+              </p>
+              
+              <!-- Tab Navigation for Skills and Education -->
+              <div class="container-fluid pt-3">
+                <ul class="nav justify-content-center nav-pills" role="tablist">
+                  <li class="nav-item">
+                    <a style="font-weight: 700;" href="#SKILLS" class="nav-link active" data-bs-toggle="pill">SKILLS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="font-weight: 700;" href="#EDUCATION" class="nav-link" data-bs-toggle="pill">EDUCATION</a>
+                  </li>
+                </ul>
+      
+                <div class="tab-content">
+                  <!-- Skills Tab -->
+                  <div id="SKILLS" class="container tab-pane active"><br>
+                    <div class="container-fluid">
+                      <p style="font-weight: 400; color: #fff;">
+                        Proficient in HTML, CSS, and JavaScript, I create well-structured and responsive websites. My code is not just functional
+                        but also optimized for performance. I approach challenges with a problem-solving mindset, finding innovative solutions
+                        and continually improving my skill set.
+                      </p>
+                    </div>
+                    <div class="social">
+                      <a href="https://drive.google.com/file/d/1-5Js-tT1hLUrAii_-4AeeUPWii3pdHk1/view?usp=drive_link">
+                        <i class="fa-solid fa-file"></i>
+                      </a> Download Resume
+                    </div>
+                  </div>
+      
+                  <!-- Education Tab -->
+                  <div id="EDUCATION" class="container tab-pane"><br>
+                    <div class="container-fluid">
+                      <p style="font-weight: 400; color: #fff;">
+                        I hold a Bachelor's of Science in Computer Science degree from KABARAK UNIVERSITY, where I engaged in a comprehensive
+                        and enriching academic journey. During my undergraduate studies, I cultivated a strong foundation in Computer Science
+                        and gained a deep understanding of key concepts and principles.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
   <br>
 
   
       <!-- SERVICES -->
-  <div id="SERVICES">
-  <br>
-  <div class="container tab-pane bg-black mt-5  ">
-  <h1 style="font-weight: 700; color: aqua;margin-top: 15px;">SERVICES</h1>
-  <div class="row mt-5 ">
-    <div class="col-4 col-md-2">
-    <img class="services" src="logojs.webp" alt="">
-  </div>
-  <div class="col-4 col-md-2">
-    <img class="services" src="html5.webp" alt="">
-  </div>
-  <div class="col-4 col-md-2">
-    <img class="services" src="REACT.webp" alt="">
-  </div>
-   <div class="col-4 col-md-2">
-    <img class="services" src="css.png" alt="">
-  </div>
-  <div class="col-4 col-md-2">
-    <img class="services" src="flask.png" alt="">
-  </div>
-  </div>
-  <div class="row mt-5 ">
-    <div class="col-4 col-md-2">
-    <img class="services" src="LARAVEL.jpg" alt="">
-  </div>
-  <div class="col-4 col-md-2">
-    <img class="services" src="DJANGO.png" alt="">
-  </div>
-  <div class="col-4 col-md-2">
-    <img class="services" src="c++.png" alt="">
-  </div>
-  <div class="col-4 col-md-2">
-    <img class="services" src="python.png" alt="">
-  </div>
-  <div class="col-4 col-md-2">
-    <img class="services" src="mysql.png" alt="">
-  </div>
-  </div>
-  </div> 
-  </div>
+      <div id="SERVICES">
+        <br>
+        <div class="container tab-pane bg-black mt-5">
+          <h1 style="font-weight: 700; color: aqua; margin-top: 15px;">SERVICES</h1>
+          <div class="row mt-5">
+            <div class="col-6 col-md-2 mb-4">
+              <img class="services img-fluid" src="logojs.webp" alt="JavaScript">
+            </div>
+            <div class="col-6 col-md-2 mb-4">
+              <img class="services img-fluid" src="html5.webp" alt="HTML5">
+            </div>
+            <div class="col-6 col-md-2 mb-4">
+              <img class="services img-fluid" src="REACT.webp" alt="React">
+            </div>
+            <div class="col-6 col-md-2 mb-4">
+              <img class="services img-fluid" src="css.png" alt="CSS">
+            </div>
+            <div class="col-6 col-md-2 mb-4">
+              <img class="services img-fluid" src="flask.png" alt="Flask">
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-6 col-md-2 mb-4">
+              <img class="services img-fluid" src="LARAVEL.jpg" alt="Laravel">
+            </div>
+            <div class="col-6 col-md-2 mb-4">
+              <img class="services img-fluid" src="DJANGO.png" alt="Django">
+            </div>
+            <div class="col-6 col-md-2 mb-4">
+              <img class="services img-fluid" src="c++.png" alt="C++">
+            </div>
+            <div class="col-6 col-md-2 mb-4">
+              <img class="services img-fluid" src="python.png" alt="Python">
+            </div>
+            <div class="col-6 col-md-2 mb-4">
+              <img class="services img-fluid" src="mysql.png" alt="MySQL">
+            </div>
+          </div>
+        </div>
+      </div>
+      
   <br>
 
   
@@ -286,12 +319,12 @@
   <h1 style="color: aqua;margin-bottom: 10px;">CONTACT ME</h1>
   <div class="row mt-3 ">
     <div class="col-12 col-md-6">
-  <div class="social"><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i></a>Email</div>
-  <div class="social"><a href="https://github.com/MBOGOO?tab=repositories"><i class="fa-brands fa-github"></i></a>GITHUB</div>
-  <div class="social"><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>Whatsapp</div>
-  <div class="social"><a href="https://www.linkedin.com/in/alex-mbogo-14b0992b1/"><i class="fa-brands fa-linkedin"></i></a>LINKEDIN</div>
-  <div class="social"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>INSTAGRAM</div>
-  <div class="social"><a href="#"><i class="fa-brands fa-facebook"></i></a>FACEBOOK</div>        
+   <div class="social mb-2"><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i></a>Email</div>
+   <div class="social mb-2"><a href="https://github.com/MBOGOO?tab=repositories"><i class="fa-brands fa-github"></i></a>GITHUB</div>
+   <div class="social mb-2"><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>Whatsapp</div>
+   <div class="social mb-2"><a href="https://www.linkedin.com/in/alex-mbogo-14b0992b1/"><i class="fa-brands fa-linkedin"></i></a>LINKEDIN</div>
+   <div class="social mb-2"><a href="#"><i class="fa-brands fa-facebook"></i></a>FACEBOOK</div>        
+   <div class="social mb-2"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>INSTAGRAM</div>
       </div>
       <div class="col-12 col-md-6 mx-auto">
         <form class="box">
@@ -312,7 +345,7 @@
             <label for="password">PASSWORD:</label>
           <input type="text" name="psw" class="form-control" placeholder="Enter your Password" required>
         </div>
-        <button style="background-color: deeppink;width: 100% ;margin-left: 75%;" class="btn" type="submit">SUBMIT</button>
+        <button style="background-color: deeppink;width: 100% ; max-width: 100px;margin-left: 75%;" class="btn" type="submit">SUBMIT</button>
         </form>
       </div>
     </div>
