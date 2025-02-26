@@ -1,0 +1,390 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Alex Mbogo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #121212;
+        color: #fff;
+    }
+    .navbar {
+        background: #000;
+    }
+    .navbar .nav-link {
+        color: #fff;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+    .navbar .nav-link:hover, .navbar .nav-link.active {
+        color: deeppink;
+    }
+    .hero {
+        text-align: center;
+        padding: 100px 0;
+    }
+    .box {
+        background-color: rgb(160, 153, 153);
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        display: block;
+        margin: 20px;
+        padding: 15px;
+        outline: none;
+        border-radius: 20px;
+        transition: 0.5s;
+        }
+    .box:hover{
+    color: deeppink;
+    box-shadow: 3px 3px 3px 3px black;
+    cursor: pointer;
+    }
+    .hero img {
+        border-radius: 50%;
+        max-width: 250px;
+    }
+    .section-title {
+        font-weight: 700;
+        color: aqua;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .card {
+        background: #1c1c1c;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        transition: 0.3s;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 10px deeppink;
+    }
+    h5{
+        color: deeppink;
+    }
+    .contact-form {
+        background: #1c1c1c;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+    }
+    .btn-pink {
+        background: deeppink;
+        color: white;
+    }
+    .btn-pink:hover {
+        background: blue;
+    }
+    .social{
+    color: white;
+    font-weight: 500;
+
+    }
+    .social a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    transition: background 0.3s;
+    text-decoration: none;
+    }
+    .social a:hover {
+    color: deeppink;
+    }
+    /* Add responsiveness */
+    @media (max-width: 768px) {
+        .container-fluid {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .col {
+            margin-bottom: 30px;
+        }
+
+        .about {
+            margin-top: 20px;
+        }
+
+        .social {
+            text-align: center;
+        }
+
+        .social i {
+            font-size: 30px;
+            width: 50px;
+            height: 60px;
+        }
+
+        .services {
+            width: 100px;
+            height: 100px;
+        }
+
+        .box {
+            margin: 10px;
+        }
+
+        h1, h2 {
+            font-size: 2em;
+        }
+
+        /* Adjust the image size */
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        }
+
+        /* For phones */
+        @media (max-width: 480px) {
+        h1, h2 {
+            font-size: 1.5em;
+        }
+
+        .box {
+            padding: 10px;
+        }
+
+        .social i {
+            font-size: 25px;
+            width: 40px;
+            height: 50px;
+        }
+
+        .services {
+            width: 80px;
+            height: 80px;
+        }
+
+        .container .row {
+            display: block;
+        }
+        }
+        form.box {
+    padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+    form.box {
+        padding: 10px;
+    }
+
+    .box input, .box button {
+        font-size: 14px;
+    }
+    }
+    </style>
+    </head>
+    <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand text-white" href="#" style="font-weight: 900; color: blue;">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about" target="_self">About</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+    <div class="container" data-aos="fade-up">
+        <h1>Hi, I'm <span class="auto-type" style="color: deeppink;"></span></h1>
+        <h2 style="color: aqua;">A <span class="designer"></span></h2>
+        <img src="log in profilepicman.png" class="img-fluid" alt="Profile Picture">
+    </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container py-5" data-aos="fade-up">
+    <h2 class="section-title">About Me</h2>
+    <p class="text-center"> I am a passionate and detail-oriented software developer with expertise in Python, Django, Laravel, MySQL, and JavaScript,
+        skilled in both backend and frontend development. I have hands-on experience building dynamic, efficient, and user-friendly
+        applications, with a strong focus on clean, maintainable code and scalable solutions. I am committed to continuous learning
+        and staying up-to-date with industry trends, and I thrive in collaborative environments, leveraging my problem-solving skills
+        to deliver high-quality software solutions that meet user needs and exceed expectations.
+    </p>
+    <div> <!-- Tab Navigation for Skills and Education -->
+        <div class="container-fluid pt-3">
+        <ul class="nav justify-content-center nav-pills" role="tablist">
+            <li class="nav-item">
+            <a style="font-weight: 700;" href="#SKILLS" class="nav-link active" data-bs-toggle="pill">SKILLS</a>
+            </li>
+            <li class="nav-item">
+            <a style="font-weight: 700;" href="#EDUCATION" class="nav-link" data-bs-toggle="pill">EDUCATION</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <!-- Skills Tab -->
+            <div id="SKILLS" class="container tab-pane active"><br>
+            <div class="container-fluid">
+                <p style="font-weight: 400; color: #fff;">
+                Proficient in HTML, CSS, and JavaScript, I create well-structured and responsive websites. My code is not just functional
+                but also optimized for performance. I approach challenges with a problem-solving mindset, finding innovative solutions
+                and continually improving my skill set.
+                </p>
+            </div>
+            <div class="social">
+                <a href="https://drive.google.com/file/d/1-5Js-tT1hLUrAii_-4AeeUPWii3pdHk1/view?usp=drive_link">
+                <i class="fa-solid fa-file"></i>
+            Download Resume</a>
+            </div>
+            </div>
+
+            <!-- Education Tab -->
+            <div id="EDUCATION" class="container tab-pane"><br>
+            <div class="container-fluid">
+                <p style="font-weight: 400; color: #fff;">
+                I hold a Bachelor's of Science in Computer Science degree from KABARAK UNIVERSITY, where I engaged in a comprehensive
+                and enriching academic journey. During my undergraduate studies, I cultivated a strong foundation in Computer Science
+                and gained a deep understanding of key concepts and principles.
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container py-5" data-aos="fade-up">
+    <h2 class="section-title">Services</h2>
+    <div class="row text-center">
+        <div class="col-md-4">
+        <div class="card">
+            <img src="logojs.webp" class="img-fluid" alt="JavaScript">
+            <h5 class="mt-3">JavaScript Development</h5>
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="card">
+            <img src="flask.png" class="img-fluid" alt="Flask">
+            <h5 class="mt-3">Flask Backend Development</h5>
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="card">
+            <img src="html5.webp" class="img-fluid" alt="Laravel">
+            <h5 class="mt-3">HTML5</h5>
+        </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="LARAVEL.jpg" class="img-fluid" alt="Laravel">
+            <h5 class="mt-3">Laravel API Development</h5>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="REACT.webp" class="img-fluid" alt="Laravel">
+            <h5 class="mt-3">React Development</h5>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="python.png" class="img-fluid" alt="Laravel">
+            <h5 class="mt-3">Python Development</h5>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="css.png" class="img-fluid" alt="Laravel">
+            <h5 class="mt-3">CSS3</h5>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="mysql.png" class="img-fluid" alt="Laravel">
+            <h5 class="mt-3">MYSQL</h5>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="DJANGO.png" class="img-fluid" alt="Laravel">
+            <h5 class="mt-3">DJANGO</h5>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="c++.png" class="img-fluid" alt="Laravel">
+            <h5 class="mt-3">C++</h5>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5" data-aos="fade-up">
+    <h2 class="section-title">Contact Me</h2>
+    <div>
+        <div class="col-12 col-md-6">
+            <div class="social mb-2">
+            <a href="mailto:kangethealex5972@gmail.com"><i class="fa-solid fa-envelope"></i> EMAIL</a>
+            </div>
+            <div class="social mb-2">
+            <a href="https://github.com/MBOGOO?tab=repositories"><i class="fa-brands fa-github"></i> GITHUB</a>
+            </div>
+            <div class="social mb-2">
+            <a href="https://www.linkedin.com/in/alex-mbogo-14b0992b1/"><i class="fa-brands fa-linkedin"></i> LINKEDIN</a>
+            </div>
+            <div class="social mb-2">
+            <a href="https://wa.me/254758949633?text=Hello%20I%20would%20like%20to%20connect%20with%20you."><i class="fa-brands fa-whatsapp"></i> WHATSAPP</a>
+            </div>       
+            <div class="social mb-2">
+            <a href="https://www.instagram.com/_mbo.goo_"><i class="fa-brands fa-instagram"></i> INSTAGRAM</a>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+    <p style="color: deeppink;">&copy; 2025 Designed by Alex Mbogo</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+    AOS.init();
+    new Typed(".auto-type", { strings: ["Alex", "Mbogo", "Kang'ethe"], typeSpeed: 100, backSpeed: 50, loop: true });
+    new Typed(".designer", { strings: ["Full Stack Developer", "Software Engineer"], typeSpeed: 100, backSpeed: 50, loop: true });
+    </script>
+    </body>
+    </html>
